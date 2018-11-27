@@ -66,6 +66,7 @@
     if (_carbonSegmentedControl) {
         // Set segmented control height equal to scroll view height
         CGRect segmentRect = _carbonSegmentedControl.frame;
+        segmentRect.origin = CGPointMake(0.0, 0.0);
         segmentRect.size.height = CGRectGetHeight(self.frame);
         _carbonSegmentedControl.frame = segmentRect;
 
